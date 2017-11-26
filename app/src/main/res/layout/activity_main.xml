@@ -15,11 +15,13 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginStart="38dp"
         android:fontFamily="serif"
         android:text="@string/title"
         android:textColor="@android:color/black"
-        android:textSize="36sp"
-        android:layout_centerHorizontal="true"/>
+        android:textSize="36sp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -28,4 +30,17 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         app:srcCompat="@drawable/joker" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/textView"
+        android:fontFamily="serif"
+        android:text="@string/title2"
+        android:textColor="#000000"
+        android:textSize="38sp"
+        android:textStyle="bold" />
 </RelativeLayout>
